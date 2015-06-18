@@ -2,22 +2,203 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700");
 $font-family-base: 'Open Sans', sans-serif;
 
+
 // Import bootstrap and fontawesome
 @import "bootstrap";
 @import "font-awesome";
 
-// Bootstrap Starter Template Styles
+
+//colors
+$color1: #b7513e;
+$color2: #311f10;
+$color3: #FFEC8B;
+
+// Bootstrap Starter Template Styles and overrides
 body {
   padding-top: 50px;
+  background:url("../img/bg.jpg") no-repeat fixed center top;
+  background-position: 0px -100px;
+  background-size: cover;
+  padding:0!important;
 }
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
+.navbar-collapse {
+  text-align:center;
+}
+.navbar-nav {
+    display:inline-block;
+    float:none;
+}
+.navbar {
+    margin: 0;
+}
+.navbar-default {
+  background-color: $color2;
+  border-color: $color2;
+}
+.no-pad {
+    padding:0;
+}
 
-.hero {
-  font-size:40px;
+.pad-top {
+    margin-top: 5em;
+    margin-bottom: 9.8em;
 }
-.home {
-  width:392px;
+
+.nav>li>a:hover, .nav>li>a:focus {
+  text-decoration: none;
+  background-color: black;
 }
+// Custom Styles
+
+.logo {
+    color: white!important;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: .4em 2em!important;
+}
+
+.other {
+    font-size: 25px;
+    font-weight: 700;
+    color: lightgray!important;
+}
+#top {
+    margin-bottom: 6em;
+    .top {
+        background:url("../img/right.jpg") no-repeat scroll center center;
+        background-size:cover;
+        height:618px;
+    }
+    .texty{
+        border-bottom-left-radius: 9%;
+        background-color: $color2;
+        opacity: .9;
+        width: 92.8%;
+        position: relative;
+        left: 15px;
+        h2 {
+            font-size:30px;
+            font-weight:bold;
+            padding:0 1.4em;
+            color:$color3;
+        }
+        p {
+            padding: 0 3.5em;
+            font-size:15px;
+            color:white;
+        }
+    }
+
+}
+
+#middle {
+    background-color: $color2;
+    h2 {
+        color:goldenrod;
+        font-size:35px;
+    }
+    h4 {
+        color:gray;
+    }
+    p {
+        color:gray;
+    }
+    &.skew1:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 820px;
+      overflow: visible;
+      width: 100%;
+      height: 500px;
+      background: whitesmoke;
+      z-index: -1;
+      -webkit-transform: skewY(-4deg);
+      -moz-transform: skewY(-4deg);
+      -ms-transform: skewY(-4deg);
+      -o-transform: skewY(-4deg);
+      transform: skewY(-4deg);
+    }
+    &.skew1:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      top: 820px;
+      overflow: visible;
+      width: 100%;
+      height: 500px;
+      background: whitesmoke;
+      z-index: -1;
+      -webkit-transform: skewY(4deg);
+      -moz-transform: skewY(4deg);
+      -ms-transform: skewY(4deg);
+      -o-transform: skewY(4deg);
+      transform: skewY(4deg);
+    }
+}
+
+#bottom {
+    .brown {
+        background-color: $color2;
+        min-height: 425px;
+
+        h4 {
+            color:$color3;
+        }
+        li {
+            color:white;
+        }
+    }
+    h2 {
+        color:$color3;
+    }
+    p {
+        color:white;
+    }
+}
+
+footer {
+    background-color:$color1;
+    .brown {
+        min-height: 356px;
+        opacity: .9;
+
+        h4 {
+            color:$color3;
+            margin-top: 1em;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        li {
+            color:white;
+        }
+    }
+    h2 {
+        color:$color3;
+    }
+    p {
+        color:white;
+    }
+}
+
+
+#updates {
+    background-color:whitesmoke;
+
+    h4 {
+        font-weight:700;
+    }
+
+    .parent-container img {
+        height: 250px;
+        display:inline-block;;
+    }
+}
+

@@ -1,6 +1,6 @@
 var gulp = require('gulp'), 
     sass = require('gulp-ruby-sass') ,
-    notify = require("gulp-notify") ,
+    notify = require('gulp-notify') ,
     bower = require('gulp-bower'),
     livereload = require('gulp-livereload'),
     server = require('gulp-server-livereload'),
