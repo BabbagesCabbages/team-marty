@@ -44,8 +44,12 @@ body {
 }
 
 .pad-top {
-    margin-top: 5em;
+    margin-top: 12em;
     margin-bottom: 9.8em;
+}
+
+.pad-6 {
+  margin-top: 6em;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
@@ -72,7 +76,7 @@ body {
     .top {
         background:url("../img/fish.jpg") no-repeat scroll center center;
         background-size:cover;
-        height:618px;
+        height:513px;
     }
     .texty{
         border-bottom-left-radius: 9%;
